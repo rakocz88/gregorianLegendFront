@@ -1,0 +1,84 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+div.upload {
+    width: 157px;
+    height: 57px;
+    background-color: #008000;
+    overflow: hidden;
+}
+
+body{
+    background-color: #C0D9F0;
+    background: linear-gradient(to right, #C0D9F0 , #36FFAB);
+}
+
+.panelf{
+     background: linear-gradient(to bottom right, #CDE86D , #FFFFAD);
+     box-shadow: 10px 10px grey;
+     border-color: black;
+       font-family: cursive;
+       color: black;
+    //background-color: #E8FC9F!important;
+}
+
+.panelm{
+    @extend .panelf;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: cursive;
+    }
+     h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: cursive;
+    }
+}
+
+.modal-content{
+     @extend .panelf;
+}
+
+a{
+    color: #49595E!important;
+}
+
+.m-b-10{
+    margin-bottom: 10px
+}
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
