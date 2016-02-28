@@ -18,9 +18,13 @@
 
         /** @ngInject */
         function NavbarController() {
-            console.log('hello');
+            
             var vm = this;
-            vm.msg = "hello";
+             vm.items = [
+        "The first choice!",
+        "And another choice for you.",
+        "but wait! A third!"
+    ];
         }
     }
 })();

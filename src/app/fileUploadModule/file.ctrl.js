@@ -8,7 +8,7 @@
             .module('fileUploadModule')
             .controller('FileUploadController', controller);
 
-    function controller(fileUploadService, $state, $scope, $http) {
+    function controller(fileUploadService, $scope) {
 
         var vm = this;
         vm.uploadFile = uploadFile;
@@ -21,10 +21,5 @@
             var uploadUrl = 'http://localhost:9999/file/upload';
             fileUploadService.uploadFile(file, uploadUrl);
         }
-        ;
-
-
-
-
     }
 })();

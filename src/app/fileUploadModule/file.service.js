@@ -20,10 +20,8 @@
                     headers: {'Content-Type': undefined}
                 })
                         .success(function () {
-                            console.log("sukcess");
                         })
                         .error(function () {
-                            console.log("error");
                         });
         }
         function download(downloadUrl) {

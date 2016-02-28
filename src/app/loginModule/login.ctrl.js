@@ -15,9 +15,9 @@
         vm.logIn=logIn;
         
         function logIn(){
-            LoginService.save(vm.logUser).$promise.then(function(success){
+            LoginService.save(vm.logUser).$promise.then(function(){
                 $state.go('bands');
-            }, function(error){
+            }, function(){
                 alert("błąd w logowaniu");
             });
         }

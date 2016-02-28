@@ -13,18 +13,18 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // endbower
 
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 .thumbnail {
-  height: 200px;
+    height: 200px;
 
-  img.pull-right {
-    width: 50px;
-  }
+    img.pull-right {
+        width: 50px;
+    }
 }
 
 div.upload {
@@ -35,16 +35,16 @@ div.upload {
 }
 
 body{
-    background-color: #C0D9F0;
-    background: linear-gradient(to right, #C0D9F0 , #36FFAB);
+    /*    background: radial-gradient(circle, black, brown, silver);*/
+    background-color: dimgray;
 }
 
 .panelf{
-     background: linear-gradient(to bottom right, #CDE86D , #FFFFAD);
-     box-shadow: 10px 10px grey;
-     border-color: black;
-       font-family: cursive;
-       color: black;
+    background: linear-gradient(to bottom right, #111114 , goldenrod);
+    font-family: cursive;
+    color: goldenrod;
+    border-radius: 5px;
+    border: 2px solid black;
     //background-color: #E8FC9F!important;
 }
 
@@ -57,7 +57,7 @@ body{
         margin-bottom: 10px;
         font-family: cursive;
     }
-     h2{
+    h2{
         margin-top: 10px;
         margin-bottom: 10px;
         font-family: cursive;
@@ -65,7 +65,7 @@ body{
 }
 
 .modal-content{
-     @extend .panelf;
+    @extend .panelf;
 }
 
 a{
@@ -75,6 +75,100 @@ a{
 .m-b-10{
     margin-bottom: 10px
 }
+
+
+.tgl-carousel{
+    width: 100%;
+}
+
+.tgl-carousel img{
+    padding:1px;
+    border:3px solid #021a40;
+    background-color: #CED4D6;
+
+
+}
+
+.tglnavbar {
+    width: 100%;
+    display: inline-block;
+}
+
+.navigation-menu{
+
+}
+
+.carousel-main{
+
+}
+
+.carousel-main span{
+    color: goldenrod;
+}
+
+.tgl-header{
+    background-color: #000;
+}
+
+.tgl-panel{
+    background-color: silver;
+}
+
+.tgl-navbar{
+    @extend .panelf;
+}
+
+.panel-inner-menu{
+    @extend .panelf;
+    text-align: center;
+}
+
+.panel-inner-menu{
+    img{
+        width: 166px;
+        height: 150px;
+    }
+    img:hover{
+        width: 166px;
+        height: 150px;
+        opacity: 0.8;
+    }
+    
+    
+}
+
+
+
+
+//PADINGS
+
+.padding-left-0{
+    padding-left: 0px;
+}
+.padding-left-5{
+    padding-left: 5px;
+}
+.padding-left-10{
+    padding-left: 0px;
+}
+.padding-left-15{
+    padding-left: 15px;
+}
+
+.padding-right-0{
+    padding-right: 0px;
+}
+.padding-right-5{
+    padding-right: 5px;
+}
+.padding-right-10{
+    padding-right: 0px;
+}
+.padding-right-15{
+    padding-right: 15px;
+}
+
+
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
