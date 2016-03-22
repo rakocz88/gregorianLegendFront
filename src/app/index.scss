@@ -35,8 +35,9 @@ div.upload {
 }
 
 body{
-    /*    background: radial-gradient(circle, black, brown, silver);*/
-    background-color: dimgray;
+    background-color: goldenrod;
+  
+    // background: linear-gradient(to bottom right, #D1A213 , red);
 }
 
 .panelf{
@@ -48,20 +49,14 @@ body{
     //background-color: #E8FC9F!important;
 }
 
-.panelm{
-    @extend .panelf;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    h1{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-family: cursive;
-    }
-    h2{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-family: cursive;
-    }
+.panel-content{
+    background: linear-gradient(to bottom right, silver, gold );
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: cursive;
+    width: 100%;
+    height: 100px;
+
 }
 
 .modal-content{
@@ -133,8 +128,9 @@ a{
         height: 150px;
         opacity: 0.8;
     }
-    
-    
+
+
+
 }
 
 

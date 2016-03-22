@@ -32,6 +32,17 @@
                     controller: 'MainPageController',
                     controllerAs: 'vm'
                 })
+                .state('createHero', {
+                    url: '/createHero',
+                    templateUrl: 'app/heroCreate/heroCreate.html',
+                    controller: 'HeroCreateController',
+                    controllerAs: 'vm' , 
+                    resolve : {
+                        initHero : function(HeroCreateService){
+                            return HeroCreateService.initHero();
+                        }
+                    } 
+                })
                ;
         $urlRouterProvider.otherwise('/mainPage');
     }

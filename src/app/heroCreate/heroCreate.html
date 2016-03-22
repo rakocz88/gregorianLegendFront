@@ -1,0 +1,18 @@
+<wizard on-finish="vm.createHero()"> 
+    <wz-step title="Basic Hero Information" canexit="vm.basicHeroValidation">
+        <ng-include src="'app/heroCreate/heroBasicInfo.html'"></ng-include>
+    </wz-step>
+    <wz-step title="Attributes" canexit="vm.attributesValidation">
+        <ng-include src="'app/heroCreate/heroAttributes.html'"></ng-include>
+    </wz-step>
+      <wz-step title="Skills" canexit="vm.skillsValidation">
+        <ng-include src="'app/heroCreate/heroSkills.html'"></ng-include>
+    </wz-step>
+      <wz-step title="Equipment" canexit="vm.equipmentValidation">
+         <ng-include src="'app/heroCreate/heroEquipment.html'"></ng-include>
+    </wz-step>
+    <wz-step title="Story" canexit="vm.storyValidation">
+        <ng-include src="'app/heroCreate/heroHistory.html'"></ng-include>
+    </wz-step>
+</wizard>
+{{vm.hero}}
